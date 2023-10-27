@@ -1,0 +1,101 @@
+body {
+    font-family: 'poppins' ,sans-serif;
+    background: rgba(0, 0, 0, 0.5); /* Fondo opaco transparente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.logo {
+    max-width: 100px; /* Ajusta el ancho máximo del logotipo según tus preferencias */
+    display: block; /* Para que la imagen no se superponga con el título */
+    margin: 0 auto 20px; /* Margen inferior para separar el logotipo del título */
+}
+
+.container {
+    background-color: #333;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+h1 {
+    color: #ffffff;
+}
+
+p {
+    color: #ffffff;
+}
+
+.warning {
+    background-color: #333;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.btnSlider {
+    display: inline-block;
+    background-color: #FFD700; 
+    color: black; 
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 5px; 
+    text-decoration: none; 
+    font-weight: bold; 
+    box-shadow: 0 0 5px #FFD700,
+    0 0 25px #FFD700
+}
+
+.btnSlider:hover {
+    background-color: #FFD700; 
+}
+
+
+/* Estilos base para pantallas de 768px o más */
+.container {
+    max-width: 800px;
+}
+
+/* Estilos para pantallas de 768px o menos */
+@media (max-width: 768px) {
+    .container {
+        max-width: 90%; /* Cambiar el ancho máximo para adaptarse a la pantalla más pequeña */
+    }
+}
+
+/* Estilos para pantallas de 450px o menos */
+@media (max-width: 450px) {
+    body {
+        background: rgba(0, 0, 0, 0.8); /* Hacer el fondo un poco más opaco */
+    }
+
+    .container {
+        padding: 10px; /* Reducir el espacio alrededor del contenedor */
+    }
+
+    h1 {
+        font-size: 24px; /* Reducir el tamaño del título */
+    }
+
+    p {
+        font-size: 16px; /* Reducir el tamaño del texto */
+    }
+
+    .warning {
+        padding: 5px; /* Reducir el espacio en el elemento de advertencia */
+    }
+
+    .btnSlider {
+        padding: 8px 15px; /* Reducir el tamaño del botón */
+        font-size: 14px; /* Reducir el tamaño del texto del botón */
+    }
+}
